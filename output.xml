@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231222 23:23:47.452" rpa="false" schemaversion="4">
+<suite id="s1" name="Test1" source="c:\TestingQALatihan\SeleniumRobot\test1.robot">
+<test id="s1-t1" name="Login Web Gagal" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_localhost}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231222 23:23:48.684" level="INFO">Opening browser 'chrome' to base url 'http://localhost/MuhamadFauzi-SPK-MethodSAW/login.php'.</msg>
+<status status="PASS" starttime="20231222 23:23:48.676" endtime="20231222 23:23:51.619"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 23:23:51.636" level="INFO">Typing text 'admin' into text field 'username'.</msg>
+<status status="PASS" starttime="20231222 23:23:51.626" endtime="20231222 23:23:51.956"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 23:23:51.969" level="INFO">Typing text '123' into text field 'password'.</msg>
+<status status="PASS" starttime="20231222 23:23:51.969" endtime="20231222 23:23:52.088"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231222 23:23:52.100" level="INFO">Clicking button 'id:login'.</msg>
+<status status="PASS" starttime="20231222 23:23:52.088" endtime="20231222 23:23:52.286"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Log in</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231222 23:23:52.319" level="INFO">Current page contains text 'Log in'.</msg>
+<status status="PASS" starttime="20231222 23:23:52.288" endtime="20231222 23:23:52.319"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231222 23:23:52.336" endtime="20231222 23:23:54.809"/>
+</kw>
+<status status="PASS" starttime="20231222 23:23:48.656" endtime="20231222 23:23:54.813"/>
+</test>
+<test id="s1-t2" name="Login Web Berhasil" line="28">
+<kw name="Login Web">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_localhost}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231222 23:23:54.831" level="INFO">Opening browser 'chrome' to base url 'http://localhost/MuhamadFauzi-SPK-MethodSAW/login.php'.</msg>
+<status status="PASS" starttime="20231222 23:23:54.831" endtime="20231222 23:23:57.765"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 23:23:57.765" level="INFO">Typing text 'admin' into text field 'username'.</msg>
+<status status="PASS" starttime="20231222 23:23:57.765" endtime="20231222 23:23:58.082"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 23:23:58.082" level="INFO">Typing text 'admin' into text field 'password'.</msg>
+<status status="PASS" starttime="20231222 23:23:58.082" endtime="20231222 23:23:58.253"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231222 23:23:58.253" level="INFO">Clicking button 'id:login'.</msg>
+<status status="PASS" starttime="20231222 23:23:58.253" endtime="20231222 23:23:58.548"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Log in</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20231222 23:23:58.613" level="INFO">Current page does not contain text 'Log in'.</msg>
+<status status="PASS" starttime="20231222 23:23:58.548" endtime="20231222 23:23:58.613"/>
+</kw>
+<status status="PASS" starttime="20231222 23:23:54.814" endtime="20231222 23:23:58.613"/>
+</kw>
+<status status="PASS" starttime="20231222 23:23:54.814" endtime="20231222 23:23:58.630"/>
+</test>
+<test id="s1-t3" name="Isi Data Alternatif dan Logout" line="32">
+<kw name="Login Web">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_localhost}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231222 23:23:58.723" level="INFO">Opening browser 'chrome' to base url 'http://localhost/MuhamadFauzi-SPK-MethodSAW/login.php'.</msg>
+<status status="PASS" starttime="20231222 23:23:58.720" endtime="20231222 23:24:01.615"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:01.630" level="INFO">Typing text 'admin' into text field 'username'.</msg>
+<status status="PASS" starttime="20231222 23:24:01.615" endtime="20231222 23:24:01.930"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:01.946" level="INFO">Typing text 'admin' into text field 'password'.</msg>
+<status status="PASS" starttime="20231222 23:24:01.945" endtime="20231222 23:24:02.105"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:02.113" level="INFO">Clicking button 'id:login'.</msg>
+<status status="PASS" starttime="20231222 23:24:02.105" endtime="20231222 23:24:02.543"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>Log in</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20231222 23:24:02.669" level="INFO">Current page does not contain text 'Log in'.</msg>
+<status status="PASS" starttime="20231222 23:24:02.543" endtime="20231222 23:24:02.670"/>
+</kw>
+<status status="PASS" starttime="20231222 23:23:58.716" endtime="20231222 23:24:02.672"/>
+</kw>
+<kw name="Buka Sidebar">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231222 23:24:02.677" endtime="20231222 23:24:02.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:sidebar-data</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:02.825" level="INFO">Clicking element 'id:sidebar-data'.</msg>
+<status status="PASS" starttime="20231222 23:24:02.820" endtime="20231222 23:24:02.942"/>
+</kw>
+<status status="PASS" starttime="20231222 23:24:02.674" endtime="20231222 23:24:02.943"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:submenu-alternatif</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:02.961" level="INFO">Clicking element 'id:submenu-alternatif'.</msg>
+<status status="PASS" starttime="20231222 23:24:02.956" endtime="20231222 23:24:03.346"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:add-alternatif</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:03.380" level="INFO">Clicking button 'id:add-alternatif'.</msg>
+<status status="PASS" starttime="20231222 23:24:03.378" endtime="20231222 23:24:03.517"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>simpan-alternatif</arg>
+<arg>Simpan</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20231222 23:24:03.517" endtime="20231222 23:24:03.795"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>kandidat</arg>
+<arg>Fauzi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:03.798" level="INFO">Typing text 'Fauzi' into text field 'kandidat'.</msg>
+<status status="PASS" starttime="20231222 23:24:03.798" endtime="20231222 23:24:03.953"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:simpan-alternatif</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:03.965" level="INFO">Clicking button 'id:simpan-alternatif'.</msg>
+<status status="PASS" starttime="20231222 23:24:03.953" endtime="20231222 23:24:04.139"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231222 23:24:05.649" level="INFO">Slept 1 second 500 milliseconds</msg>
+<status status="PASS" starttime="20231222 23:24:04.139" endtime="20231222 23:24:05.649"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:logout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231222 23:24:05.654" level="INFO">Clicking element 'id:logout'.</msg>
+<status status="PASS" starttime="20231222 23:24:05.649" endtime="20231222 23:24:05.857"/>
+</kw>
+<status status="PASS" starttime="20231222 23:23:58.699" endtime="20231222 23:24:05.888"/>
+</test>
+<status status="PASS" starttime="20231222 23:23:47.475" endtime="20231222 23:24:05.904"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
